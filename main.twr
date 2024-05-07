@@ -1,0 +1,267 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf final.ucf
+
+Design file:              main.ncd
+Physical constraint file: main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLOCK_24
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Key<0>      |   10.514(R)|      SLOW  |   -0.726(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Key<1>      |   15.333(R)|      SLOW  |   -0.576(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLOCK_24 to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+Leds<0>         |        10.123(R)|      SLOW  |         4.380(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<1>         |         9.989(R)|      SLOW  |         4.295(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<2>         |         9.596(R)|      SLOW  |         3.954(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<3>         |         9.450(R)|      SLOW  |         3.864(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<4>         |         9.491(R)|      SLOW  |         3.905(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<5>         |         9.045(R)|      SLOW  |         3.686(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<6>         |         8.989(R)|      SLOW  |         3.636(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+Leds<7>         |         8.969(R)|      SLOW  |         3.631(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_B<0>        |        25.492(R)|      SLOW  |         3.980(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_B<1>        |        24.870(R)|      SLOW  |         4.537(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_G<0>        |        25.934(R)|      SLOW  |         4.228(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_G<1>        |        25.637(R)|      SLOW  |         4.044(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_HS          |        10.007(R)|      SLOW  |         3.772(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_R<0>        |        25.122(R)|      SLOW  |         3.736(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_R<1>        |        25.489(R)|      SLOW  |         3.931(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+VGA_VS          |        11.296(R)|      SLOW  |         4.012(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<0>       |         9.399(R)|      SLOW  |         3.950(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<1>       |         9.740(R)|      SLOW  |         4.138(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<2>       |         9.190(R)|      SLOW  |         3.751(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+outseg<3>       |         9.193(R)|      SLOW  |         3.741(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<0>|        12.548(R)|      SLOW  |         4.416(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<1>|        12.281(R)|      SLOW  |         4.696(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<2>|        13.183(R)|      SLOW  |         4.671(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<3>|        12.106(R)|      SLOW  |         4.663(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<4>|        13.186(R)|      SLOW  |         4.707(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<5>|        15.599(R)|      SLOW  |         5.508(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+sevensegments<6>|        12.775(R)|      SLOW  |         4.220(R)|      FAST  |CLOCK_24_BUFGP    |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock RESET_N to Pad
+----------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                    | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                   | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+VGA_B<0>        |        25.259(R)|      SLOW  |         6.742(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+                |        18.958(F)|      SLOW  |         9.326(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        23.079(F)|      SLOW  |        11.931(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        20.516(F)|      SLOW  |        10.349(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        19.742(F)|      SLOW  |         9.982(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        20.215(F)|      SLOW  |        10.245(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        20.745(F)|      SLOW  |        10.476(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        21.553(F)|      SLOW  |        10.899(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        21.174(F)|      SLOW  |        10.688(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        20.378(F)|      SLOW  |        10.319(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        19.887(F)|      SLOW  |         9.836(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        20.612(F)|      SLOW  |        10.320(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        20.204(F)|      SLOW  |         9.932(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        23.557(F)|      SLOW  |        12.307(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        21.823(F)|      SLOW  |        11.168(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        23.614(F)|      SLOW  |        12.119(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        23.942(F)|      SLOW  |        12.332(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        24.749(F)|      SLOW  |        12.756(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        23.122(F)|      SLOW  |        11.660(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        25.886(F)|      SLOW  |        13.497(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        24.508(F)|      SLOW  |        12.598(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        24.772(F)|      SLOW  |        12.638(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        24.113(F)|      SLOW  |        12.373(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        25.106(F)|      SLOW  |        12.929(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        25.847(F)|      SLOW  |        13.469(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+VGA_B<1>        |        24.801(R)|      SLOW  |         6.424(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+                |        18.336(F)|      SLOW  |         9.008(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        22.457(F)|      SLOW  |        11.613(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        19.894(F)|      SLOW  |        10.031(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        19.120(F)|      SLOW  |         9.664(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        19.593(F)|      SLOW  |         9.927(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        20.123(F)|      SLOW  |        10.158(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        20.931(F)|      SLOW  |        10.581(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        20.552(F)|      SLOW  |        10.370(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        19.756(F)|      SLOW  |        10.001(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        19.265(F)|      SLOW  |         9.518(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        19.990(F)|      SLOW  |        10.002(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        19.582(F)|      SLOW  |         9.614(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        22.935(F)|      SLOW  |        11.989(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        21.201(F)|      SLOW  |        10.850(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        22.992(F)|      SLOW  |        11.801(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        23.320(F)|      SLOW  |        12.014(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        24.127(F)|      SLOW  |        12.438(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        22.500(F)|      SLOW  |        11.342(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        25.264(F)|      SLOW  |        13.179(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        23.886(F)|      SLOW  |        12.280(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        24.150(F)|      SLOW  |        12.320(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        23.491(F)|      SLOW  |        12.055(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        24.484(F)|      SLOW  |        12.611(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        25.225(F)|      SLOW  |        13.151(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+VGA_G<0>        |        19.400(F)|      SLOW  |         9.574(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        23.521(F)|      SLOW  |        12.179(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        20.958(F)|      SLOW  |        10.597(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        20.184(F)|      SLOW  |        10.230(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        20.657(F)|      SLOW  |        10.493(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        21.187(F)|      SLOW  |        10.724(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        21.995(F)|      SLOW  |        11.147(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        21.616(F)|      SLOW  |        10.936(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        20.820(F)|      SLOW  |        10.567(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        20.329(F)|      SLOW  |        10.084(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        21.054(F)|      SLOW  |        10.568(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        20.646(F)|      SLOW  |        10.180(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        23.999(F)|      SLOW  |        12.555(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        22.265(F)|      SLOW  |        11.416(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        24.056(F)|      SLOW  |        12.367(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        24.384(F)|      SLOW  |        12.580(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        25.191(F)|      SLOW  |        13.004(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        23.564(F)|      SLOW  |        11.908(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        26.328(F)|      SLOW  |        13.745(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        24.950(F)|      SLOW  |        12.846(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        25.214(F)|      SLOW  |        12.886(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        24.555(F)|      SLOW  |        12.621(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        25.548(F)|      SLOW  |        13.177(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        26.289(F)|      SLOW  |        13.717(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+                |        25.701(R)|      SLOW  |         6.990(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+VGA_G<1>        |        19.103(F)|      SLOW  |         9.390(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        23.224(F)|      SLOW  |        11.995(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        20.661(F)|      SLOW  |        10.413(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        19.887(F)|      SLOW  |        10.046(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        20.360(F)|      SLOW  |        10.309(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        20.890(F)|      SLOW  |        10.540(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        21.698(F)|      SLOW  |        10.963(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        21.319(F)|      SLOW  |        10.752(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        20.523(F)|      SLOW  |        10.383(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        20.032(F)|      SLOW  |         9.900(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        20.757(F)|      SLOW  |        10.384(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        20.349(F)|      SLOW  |         9.996(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        23.702(F)|      SLOW  |        12.371(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        21.968(F)|      SLOW  |        11.232(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        23.759(F)|      SLOW  |        12.183(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        24.087(F)|      SLOW  |        12.396(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        24.894(F)|      SLOW  |        12.820(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        23.267(F)|      SLOW  |        11.724(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        26.031(F)|      SLOW  |        13.561(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        24.653(F)|      SLOW  |        12.662(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        24.917(F)|      SLOW  |        12.702(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        24.258(F)|      SLOW  |        12.437(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        25.251(F)|      SLOW  |        12.993(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        25.992(F)|      SLOW  |        13.533(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+                |        25.404(R)|      SLOW  |         6.806(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+VGA_R<0>        |        18.588(F)|      SLOW  |         9.124(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        22.709(F)|      SLOW  |        11.729(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        20.146(F)|      SLOW  |        10.147(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        19.372(F)|      SLOW  |         9.780(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        19.845(F)|      SLOW  |        10.043(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        20.375(F)|      SLOW  |        10.274(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        21.183(F)|      SLOW  |        10.697(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        20.804(F)|      SLOW  |        10.486(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        20.008(F)|      SLOW  |        10.117(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        19.517(F)|      SLOW  |         9.634(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        20.242(F)|      SLOW  |        10.118(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        19.834(F)|      SLOW  |         9.730(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        23.187(F)|      SLOW  |        12.105(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        21.453(F)|      SLOW  |        10.966(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        23.244(F)|      SLOW  |        11.917(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        23.572(F)|      SLOW  |        12.130(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        24.379(F)|      SLOW  |        12.554(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        22.752(F)|      SLOW  |        11.458(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        25.516(F)|      SLOW  |        13.295(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        24.138(F)|      SLOW  |        12.396(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        24.402(F)|      SLOW  |        12.436(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        23.743(F)|      SLOW  |        12.171(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        24.736(F)|      SLOW  |        12.727(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        25.477(F)|      SLOW  |        13.267(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+                |        24.717(R)|      SLOW  |         6.540(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+VGA_R<1>        |        18.955(F)|      SLOW  |         9.319(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_101_o|   0.000|
+                |        23.076(F)|      SLOW  |        11.924(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_103_o|   0.000|
+                |        20.513(F)|      SLOW  |        10.342(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_81_o |   0.000|
+                |        19.739(F)|      SLOW  |         9.975(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_83_o |   0.000|
+                |        20.212(F)|      SLOW  |        10.238(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_85_o |   0.000|
+                |        20.742(F)|      SLOW  |        10.469(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_87_o |   0.000|
+                |        21.550(F)|      SLOW  |        10.892(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_89_o |   0.000|
+                |        21.171(F)|      SLOW  |        10.681(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_91_o |   0.000|
+                |        20.375(F)|      SLOW  |        10.312(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_93_o |   0.000|
+                |        19.884(F)|      SLOW  |         9.829(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_95_o |   0.000|
+                |        20.609(F)|      SLOW  |        10.313(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_97_o |   0.000|
+                |        20.201(F)|      SLOW  |         9.925(F)|      FAST  |VGA_DIS/RESET_H1player[31]_AND_99_o |   0.000|
+                |        23.554(F)|      SLOW  |        12.300(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_145_o   |   0.000|
+                |        21.820(F)|      SLOW  |        11.161(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_147_o   |   0.000|
+                |        23.611(F)|      SLOW  |        12.112(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_149_o   |   0.000|
+                |        23.939(F)|      SLOW  |        12.325(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_151_o   |   0.000|
+                |        24.746(F)|      SLOW  |        12.749(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_153_o   |   0.000|
+                |        23.119(F)|      SLOW  |        11.653(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_155_o   |   0.000|
+                |        25.883(F)|      SLOW  |        13.490(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_157_o   |   0.000|
+                |        24.505(F)|      SLOW  |        12.591(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_159_o   |   0.000|
+                |        24.769(F)|      SLOW  |        12.631(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_161_o   |   0.000|
+                |        24.110(F)|      SLOW  |        12.366(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_163_o   |   0.000|
+                |        25.103(F)|      SLOW  |        12.922(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_165_o   |   0.000|
+                |        25.844(F)|      SLOW  |        13.462(F)|      FAST  |VGA_DIS/RESET_tirH1[31]_AND_167_o   |   0.000|
+                |        25.084(R)|      SLOW  |         6.735(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+sevensegments<2>|        14.565(R)|      SLOW  |         6.751(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+sevensegments<4>|        13.238(R)|      SLOW  |         5.922(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+sevensegments<5>|        16.384(R)|      SLOW  |         6.924(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+sevensegments<6>|        12.366(R)|      SLOW  |         5.001(R)|      FAST  |RESET_N_IBUF_BUFG                   |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+
+Clock to Setup on destination clock CLOCK_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |   10.229|         |         |         |
+RESET_N        |   16.309|   19.371|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RESET_N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |         |         |    3.459|         |
+RESET_N        |    5.058|    5.058|    1.415|    8.575|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Jan 30 11:51:18 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 276 MB
+
+
+

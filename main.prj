@@ -1,0 +1,3 @@
+vhdl work "VGA_Display.vhd"
+vhdl work "VGA_Controller.vhd"
+vhdl work "main.vhd"
